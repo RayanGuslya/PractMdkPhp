@@ -4,7 +4,7 @@ $str = readline();
 $result = calculateExpression($str);
 echo "Ответ: " . $result . PHP_EOL;
 
-function calculateExpression($str)
+function calculateExpression($str) : string
 {
     if (!preg_match('/^[\d\s\(\)\+\-\*\/\.]+$/', $str)) {
         echo "Ошибка! Введены некорректные символы." . PHP_EOL;
@@ -83,7 +83,7 @@ function calculateExpression($str)
 
     while (count($operators) > 0) {
         $op = array_shift($operators);
-        if (count($operators) == 0 && count($operands) != 2) {
+        if (count($operators) == 0 && count($operands) != 1) {
             $num2 = array_shift($operands);
             $num1 = array_shift($operands);
         } else {
@@ -99,7 +99,7 @@ function calculateExpression($str)
     return $operands[0];
 }
 
-function performOperation($num1, $num2, $op)
+function performOperation($num1, $num2, $op) : string
 {
 
     switch ($op) {
