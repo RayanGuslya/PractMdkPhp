@@ -1,36 +1,29 @@
 <?php
-require('TomatoBush.php');
-require('Gardener.php');
-echo "Придумайе имя садовнику: ";
-$name = readline();
-echo "Количество кустов: ";
-$countBush = readline();
-
-$tomatoBush = new TomatoBush($countBush);
-$gardener = new Gardener($name, $tomatoBush);
-
+require ('PizzaStore.php');
+phpinfo();
 $startGame = true;
-while ($startGame) {
-    echo "--------------Меню----------------" . PHP_EOL;
-    echo "1 - справка по садоводству" . PHP_EOL;
-    echo "2 - ухаживать за кустом с помидорами" . PHP_EOL;
-    echo "3 - собрать урожай" . PHP_EOL;
-    echo "----------------------------------" . PHP_EOL;
-    $select = readline();
-
-    switch ($select) {
+$pizzaStore = new PizzaStore();
+echo "-------------меню-------------- \n";
+echo "1 - сырная \n";
+echo "2 - пепперони \n";
+echo "3 - вегетарианская \n";
+echo "------------------------------- \n";
+$num = readline();
+while($startGame){
+    switch($num){
         case 1:
-            echo $gardener::KnowledgeBase();
+            $pizzaStore->orderPizza("сырная");
             break;
         case 2:
-            $gardener->work();
+            $pizzaStore->orderPizza("пепперони");
             break;
         case 3:
-            $gardener->harvest();
+            $pizzaStore->orderPizza("вегетарианская");
             break;
         default:
-            echo "error" . PHP_EOL;
-            $startGame = true;
-            break;
+        $startGame = true;
+        echo 'вне диапазона';
+        break;
     }
+    $startGame = false;
 }
