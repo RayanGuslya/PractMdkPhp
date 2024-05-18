@@ -1,0 +1,15 @@
+{
+    "name": "smysh/test",
+    "autoload": {
+        "psr-4": {
+            "Smysh\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rmt",
+            "email": "rmt@mail.ru"
+        }
+    ],
+    "require": {}
+}
