@@ -1,5 +1,4 @@
 <?php
-
 namespace Smysh\Test;
 
 use Smysh\Test\Pizza;
