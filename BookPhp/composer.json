@@ -12,5 +12,8 @@
             "email": "raygtest@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpstan/phpstan" :"^1.12",
+        "squizlabs/php_codesniffer": "3.*"
+    }
 }
