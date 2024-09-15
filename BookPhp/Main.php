@@ -1,5 +1,9 @@
 <?php
-require 'Libary.php';
+require __DIR__ . '/vendor/autoload.php';
+
+use Alexander\BookPhp\Book;
+use Alexander\BookPhp\Libary;
+
 $libary = new Libary();
 while(true) {
 echo "1-добавить книгу".PHP_EOL;
@@ -18,7 +22,6 @@ switch ($num) {
     echo "genre: ";
     $genre = readline();
     $libary->addBook(new Book($title, $author,$publishedYear,$genre));
-    #$this->books[] = new Book($title,$author,$ublishedYear,$genre);
         break;
     case 2:
         echo "Введите название книги: ";
@@ -47,3 +50,4 @@ switch ($num) {
         break;
     }
 }
+?>

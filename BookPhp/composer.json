@@ -1,0 +1,16 @@
+{
+    "name": "alexander/book-php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Alexander\\BookPhp\\": "src/BookPhp/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RayanGuslya",
+            "email": "raygtest@gmail.com"
+        }
+    ],
+    "require": {}
+}

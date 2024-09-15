@@ -1,4 +1,5 @@
 <?php
+namespace Alexander\BookPhp;
 class Book {
     private $title;//название книги, строка
     private $author;//автор книги, строка

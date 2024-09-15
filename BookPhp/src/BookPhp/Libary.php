@@ -1,5 +1,5 @@
 <?php
-require 'Book.php';
+namespace Alexander\BookPhp;
 class Libary {
     private $books = array();
     function addBook(Book $book): void {
@@ -27,3 +27,4 @@ class Libary {
         return $this->books;
     }
 }
+?>
