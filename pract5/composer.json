@@ -1,15 +1,19 @@
 {
-    "name": "smysh/test",
+    "name": "alexander/pract5",
+    "type": "project",
     "autoload": {
         "psr-4": {
-            "Smysh\\Test\\": "src/"
+            "Alexander\\Pract5\\": "src/storage/"
         }
     },
     "authors": [
         {
-            "name": "rmt",
-            "email": "rmt@mail.ru"
+            "name": "RayanGuslya",
+            "email": "raytest@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpstan/phpstan" :"^1.12",
+        "squizlabs/php_codesniffer" : "^3.10" 
+    }
 }

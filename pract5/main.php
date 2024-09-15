@@ -1,6 +1,8 @@
 <?php
-require_once 'vendor/autoload.php';
-use Smysh\Test\PizzaStore;
+require __DIR__ . '/vendor/autoload.php';
+
+use Alexander\Pract5\PizzaStore;
+
 $pizzaStore = new PizzaStore();
 $startGame = true;
 echo "-------------меню-------------- \n";
