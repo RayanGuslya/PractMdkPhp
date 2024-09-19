@@ -1,1 +1,0 @@
-{"version":1,"defects":{"Task3Test::testCaesarCipherRussian":4,"Task3Test::testCaesarCipherRussianEquals":3},"times":{"Task3Test::testCaesarCipherRussian":0.004,"Task3Test::testCaesarCipherRussianNotNull":0.001,"Task3Test::testCaesarCipherRussianInstanceOf":0,"Task3Test::testCaesarCipherRussianEquals":0}}
