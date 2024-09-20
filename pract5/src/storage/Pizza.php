@@ -16,10 +16,11 @@ class Pizza
 
     public function prepare()
     {
-        echo "Готовим пиццу {$this->name} с {$this->sauce} соусом и топпингами:".implode(", ", $this->toppings) . "\n";
-    
+        echo "Готовим пиццу {$this->name} с {$this->sauce} соусом и топпингами:" . implode(", ", $this->toppings) . "\n";
+
     }
-    public function cut() {
+    public function cut()
+    {
         echo "Данную пиццу нарезают по диагонали\n";
     }
 
