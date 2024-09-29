@@ -1,0 +1,18 @@
+{
+    "name": "alexander/pract6",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Alexander\\Pract6\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RayanGuslya",
+            "email": "raytest@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "11"
+    }
+}
