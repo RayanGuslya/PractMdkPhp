@@ -2,6 +2,8 @@
 
 namespace Alexander\Pract6;
 
+use Alexander\Pract6\OutOfStockException;
+
 class Product
 {
     private $name;

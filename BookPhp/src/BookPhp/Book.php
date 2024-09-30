@@ -6,13 +6,15 @@ class Book
     private $author;//автор книги, строка
     private $publishedYear;//год публикации книги, целое число
     private $genre;//жанр книги, строка
+
     function __construct($title, $author, $ublishedYear, $genre)
     {
         $this->title = $title;
         $this->author = $author;
-        $this->ublishedYear = $ublishedYear;
+        $this->publishedYear = $ublishedYear;
         $this->genre = $genre;
     }
+
     public function getBookInfo(): string
     { //название, автор, год публикации и жанр
         return "title: $this->title, 
@@ -20,6 +22,7 @@ class Book
         ublishedYear: $this->publishedYear,
         genre: $this->genre";
     }
+
     //get
     public function getTitle(): string
     {

@@ -1,10 +1,12 @@
 <?php
+
 require __DIR__ . '/vendor/autoload.php';
 
 use Alexander\BookPhp\Book;
 use Alexander\BookPhp\Libary;
 
 $libary = new Libary();
+
 while (true) {
     echo "1-добавить книгу" . PHP_EOL;
     echo "2-удалить книгу по её названию" . PHP_EOL;

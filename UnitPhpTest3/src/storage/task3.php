@@ -1,5 +1,7 @@
 <?php
+
 namespace Alexander\UnitPhpTest;
+
 class Task3
 {
     public function caesarCipherRussian(string $text, int $key): string
@@ -24,17 +26,4 @@ class Task3
 
         return $result;
     }
-
-    /*
-    // Ввод текста и сдвига с клавиатуры
-    echo "Введите текст на русском: ";
-    $text = readline();
-    echo "Введите сдвиг (целое число): ";
-    $key = intval(readline());
-
-    // Шифрование
-    $encryptedText = caesarCipherRussian($text, $key);
-
-    echo "Зашифрованный текст: " . $encryptedText . "\n";
-    */
 }

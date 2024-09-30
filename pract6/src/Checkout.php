@@ -2,6 +2,8 @@
 
 namespace Alexander\Pract6;
 
+use Alexander\Pract6\PaymentGatewayException;
+use Alexander\Pract6\InsufficientFundsException;
 use Alexander\Pract6\Cart;
 
 class Checkout

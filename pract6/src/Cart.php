@@ -3,6 +3,8 @@
 namespace Alexander\Pract6;
 
 use Alexander\Pract6\Product;
+use Alexander\Pract6\ItemOutOfStockException;
+use Alexander\Pract6\CartLimitExceededException;
 
 class Cart
 {

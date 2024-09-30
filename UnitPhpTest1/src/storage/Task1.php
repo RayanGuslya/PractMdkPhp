@@ -1,5 +1,7 @@
 <?php
+
 namespace Alexander\UnitPhpTest1;
+
 class Task1
 {
     private $text = "The House
@@ -8,10 +10,12 @@ class Task1
     They eat in the dining room. The house has two bedrooms. They sleep in the bedrooms. They keep their clothes in the closet. There is one bathroom. 
     They brush their teeth in the bathroom.
     The house has a garden. John and Sarah play in the garden. They have a dog. John and Sarah like to play with the dog.";
+
     public function getText()
     {
         return $this->text;
     }
+
     function mostRecent(string $text): string
     {
         $num = 0;

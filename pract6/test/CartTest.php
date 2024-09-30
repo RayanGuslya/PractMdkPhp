@@ -1,6 +1,5 @@
 <?php
 
-use Alexander\Pract6\Checkout;
 use Alexander\Pract6\Product;
 use Alexander\Pract6\Cart;
 use \PHPUnit\Framework\TestCase;

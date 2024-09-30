@@ -3,10 +3,12 @@ namespace Alexander\BookPhp;
 class Libary
 {
     private $books = array();
+
     function addBook(Book $book): void
     {
         $this->books[] = $book;
     }
+
     function removeBookByTile($title): void
     {
         foreach ($this->books as $index => $book) {
@@ -17,6 +19,7 @@ class Libary
             }
         }
     }
+
     function findBooksByAuthor($author): array
     {
         $booksByAuthor = array();
@@ -27,6 +30,7 @@ class Libary
         }
         return $booksByAuthor;
     }
+
     function listAllBooks(): array
     {
         return $this->books;

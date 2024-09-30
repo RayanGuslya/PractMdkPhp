@@ -1,5 +1,7 @@
 <?php
+
 namespace Alexander\UnitPhpTest2;
+
 class Task2
 {
     function arrayUnique(array $arr): array
@@ -14,11 +16,4 @@ class Task2
 
         return $uniqueArray;
     }
-
-    /*
-    // Пример использования
-    $array = [1, 2, 2, 3, 4, 5, 4, 5, 5];
-    $uniqueArray = arrayUnique($array);
-    print_r($uniqueArray);
-    */
 }
