@@ -3,7 +3,7 @@
 namespace Alexander\Pract7;
 
 use Alexander\Pract7\AbstractNotification;
-use Exception;
+use Alexander\Pract7\SmsNotificationException;
 
 class SMSNotification extends AbstractNotification
 {
@@ -12,12 +12,12 @@ class SMSNotification extends AbstractNotification
     {
         if (empty($message)) {
             $this->status = "message is empty";
-            throw new Exception("error: message is empty");
+            throw new SmsNotificationException("error: message is empty");
         }
 
         if (strlen($message) >= self::max_length) {
             $this->status = "exceeded the length";
-            throw new Exception("error: exceeded the length");
+            throw new SmsNotificationException("error: exceeded the length");
         }
 
         $this->status = "sms sent successfully";

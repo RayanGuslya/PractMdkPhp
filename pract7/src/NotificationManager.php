@@ -2,7 +2,7 @@
 
 namespace Alexander\Pract7;
 
-use Exception;
+use Alexander\Pract7\SendNotificationException;
 
 class NotificationManager
 {
@@ -17,7 +17,7 @@ class NotificationManager
                 'type' => $notification->getType(),
                 'status' => $notification->getStatus()
             ];
-        } catch (Exception $e) {
+        } catch (SendNotificationException $e) {
             echo "error" . $e->getMessage() . '\n';
         }
     }

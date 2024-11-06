@@ -1,0 +1,16 @@
+{
+    "name": "alexander/pract8",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Alexander\\Pract8\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RayanGuslya",
+            "email": "rayTest@gmail.com"
+        }
+    ],
+    "require": {}
+}

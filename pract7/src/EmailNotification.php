@@ -3,7 +3,7 @@
 namespace Alexander\Pract7;
 
 use Alexander\Pract7\AbstractNotification;
-use Exception;
+use Alexander\Pract7\EmailNotificationException;
 
 class EmailNotification extends AbstractNotification
 {
@@ -13,12 +13,12 @@ class EmailNotification extends AbstractNotification
     {
         if (empty($message)) {
             $this->status = "message is empty";
-            throw new Exception("error: message is empty");
+            throw new EmailNotificationException("error: message is empty");
         }
 
         if (empty($this->theme)) {
             $this->status = "theme is empty";
-            throw new Exception("error: theme is empty");
+            throw new EmailNotificationException("error: theme is empty");
         }
 
         $this->status = "email sent successfully";
