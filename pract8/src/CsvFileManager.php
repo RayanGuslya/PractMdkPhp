@@ -6,7 +6,7 @@ use Alexander\Pract8\CsvFileManagerException;
 
 class CsvFileManager implements FileManager
 {
-    public function readFile($fileName)
+    public function readFile(string $fileName): string|array
     {
         try {
             $file = fopen($fileName, "r");
@@ -23,13 +23,13 @@ class CsvFileManager implements FileManager
                 $str .= implode(", ", $row) . "\n";
             }
 
-            return $str;
         } catch (CsvFileManagerException $e) {
             echo $e->getMessage();
         }
+        return $str;
     }
 
-    public function writeFile($filename, $data)
+    public function writeFile(string $filename, string|array $data): void
     {
         try {
             $fp = fopen($filename, "w");

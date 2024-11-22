@@ -6,7 +6,7 @@ use Alexander\Pract8\FileManagerFabricException;
 
 class FileManagerFabric
 {
-    public static function create(string $type)
+    public static function create(string $type): ?FileManager
     {
         switch ($type) {
             case 'Text':

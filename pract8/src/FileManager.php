@@ -4,7 +4,7 @@ namespace Alexander\Pract8;
 
 interface FileManager
 {
-    public function readFile($fileName);
-    public function writeFile($filename, $data);
+    public function readFile(string $fileName): string|array;
+    public function writeFile(string $filename, string|array $data): void;
 
 }

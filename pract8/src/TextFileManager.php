@@ -6,16 +6,16 @@ use Alexander\Pract8\TextFileMangerException;
 
 class TextFileManager implements FileManager
 {
-    public function readFile($fileName)
+    public function readFile(string $fileName): string|array
     {
-        try {
-            return file_get_contents($fileName);
-        } catch (TextFileMangerException $e) {
-            echo "Error" . $e->getMessage();
+        $content = file_get_contents($fileName);
+        if ($content === false) {
+            throw new TextFileMangerException("error read file");
         }
+        return $content;
     }
 
-    public function writeFile($filename, $data)
+    public function writeFile(string $filename, string|array $data): void
     {
         try {
             $current = file_get_contents($filename);

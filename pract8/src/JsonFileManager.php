@@ -6,7 +6,7 @@ use Alexander\Pract8\JsonFileMangerException;
 
 class JsonFileManager implements FileManager
 {
-    public function readFile($fileName)
+    public function readFile(string $fileName): string|array
     {
         $content = file_get_contents($fileName);
         if ($content === false) {
@@ -20,7 +20,7 @@ class JsonFileManager implements FileManager
         return $json;
     }
 
-    public function writeFile($filename, $data)
+    public function writeFile(string $filename, string|array $data): void
     {
         $jsonData = json_encode($data, JSON_PRETTY_PRINT);
         if ($jsonData === false) {

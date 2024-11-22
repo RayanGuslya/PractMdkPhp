@@ -1,0 +1,16 @@
+[
+    {
+        "register": {
+            "name": "kefa",
+            "age": 30
+        },
+        "status": "online"
+    },
+    {
+        "register": {
+            "name": "gdf",
+            "age": 25
+        },
+        "status": "offline"
+    }
+]
