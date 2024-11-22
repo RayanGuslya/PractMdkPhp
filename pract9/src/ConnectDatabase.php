@@ -7,7 +7,7 @@ use PDOException;
 
 class ConnectDatabase
 {
-    private $pdo;
+    private PDO $pdo;
 
     public function __construct(string $user, string $pass, string $dsn)
     {
@@ -19,7 +19,7 @@ class ConnectDatabase
         }
     }
 
-    public function getPdo()
+    public function getPdo(): PDO
     {
         return $this->pdo;
     }

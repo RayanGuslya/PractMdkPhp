@@ -24,10 +24,10 @@ echo "output add user:" . PHP_EOL;
 $user->addUser("name_test3", "sdfgh@mail.ru");
 
 echo "output update user:" . PHP_EOL;
-$user->update(1, "update_name", "update_email");
+$user->update(2, "update_name", "update_email");
 
 echo "output delete user:" . PHP_EOL;
-$user->delete(9);
+$user->delete(1);
 
 echo "output all user:" . PHP_EOL;
 print_r($connect->getAllUsers());
