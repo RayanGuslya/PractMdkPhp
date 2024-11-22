@@ -9,7 +9,7 @@ class ConnectDatabase
 {
     private $pdo;
 
-    public function __construct($user, $pass, $dsn)
+    public function __construct(string $user, string $pass, string $dsn)
     {
         try {
             $this->pdo = new PDO($dsn, $user, $pass);
