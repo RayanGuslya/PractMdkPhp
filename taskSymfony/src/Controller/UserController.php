@@ -61,7 +61,6 @@ class UserController extends AbstractController
     public function delete(User $user, EntityManagerInterface $em): Response
     {
         $em->remove($user);
-        //$em->remove($product1);
         $em->flush();
 
         return $this->redirect('/user');
